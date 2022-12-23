@@ -7,19 +7,18 @@ public class FlipCoin {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Core Program!!");
 
-		int N;
-		int p;
-		int power = 1;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the number:");
-		N = scan.nextInt();
-		System.out.println("Enter the Power:");
-		p = scan.nextInt();
-		for (int i = 1; i <= p; i++) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter dividend: ");
+		int dividend = scanner.nextInt();
 
-			power = N * power;
-		}
-		System.out.println("Power Table of 2 is:" + power);
+		System.out.println("Enter divisor: ");
+		int divisor = scanner.nextInt();
+
+		int Quotient = dividend / divisor;
+		int Remainder = dividend % divisor;
+
+		System.out.println("The Quotient is: " + Quotient);
+		System.out.println("The Remainder is: " + Remainder);
 	}
 
 }
