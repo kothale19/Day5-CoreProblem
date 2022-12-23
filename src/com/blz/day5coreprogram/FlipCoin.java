@@ -8,13 +8,19 @@ public class FlipCoin {
 		System.out.println("Welcome to Core Program!!");
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the Number: ");
-		int num = scan.nextInt();
-		if (num % 2 == 0) {
-			System.out.println("The number is even: " + num);
+		System.out.println("Enter any Alphabet:");
+		char Alphabet = scan.next().charAt(0);
 
-		} else {
-			System.out.println("The number is Odd: " + num);
+		switch (Alphabet) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.println(Alphabet + " is a Vowel");
+			break;
+		default:
+			System.out.println(Alphabet + " is a Consanant");
 		}
 	}
 
