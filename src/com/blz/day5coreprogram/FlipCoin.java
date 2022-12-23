@@ -8,20 +8,19 @@ public class FlipCoin {
 		System.out.println("Welcome to Core Program!!");
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter any Alphabet:");
-		char Alphabet = scan.next().charAt(0);
+		System.out.println("Enter the First Number:");
+		int a = scan.nextInt();
+		System.out.println("Enter the Second Number:");
+		int b = scan.nextInt();
+		System.out.println("Enter the Third Number:");
+		int c = scan.nextInt();
 
-		switch (Alphabet) {
-		case 'a':
-		case 'e':
-		case 'i':
-		case 'o':
-		case 'u':
-			System.out.println(Alphabet + " is a Vowel");
-			break;
-		default:
-			System.out.println(Alphabet + " is a Consanant");
-		}
+		if (a > b && a > c)
+			System.out.println("Largest Number is: " + a);
+		else if (b > a && b > c)
+			System.out.println("Largest Number is: " + b);
+		else
+			System.out.println("Largest Number is: " + c);
 	}
 
 }
