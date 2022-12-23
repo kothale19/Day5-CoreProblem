@@ -7,19 +7,19 @@ public class FlipCoin {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Core Program!!");
 
-		int year;
+		int N;
+		int p;
+		int power = 1;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		N = scan.nextInt();
+		System.out.println("Enter the Power:");
+		p = scan.nextInt();
+		for (int i = 1; i <= p; i++) {
 
-		System.out.println("Enter the Year:");
-		Scanner scanner = new Scanner(System.in);
-		year = scanner.nextInt();
-
-		if (year % 100 == 0 && year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
-			System.out.println("It is a LeapYear");
+			power = N * power;
 		}
-
-		else {
-			System.out.println("It is not a LeapYear");
-		}
+		System.out.println("Power Table of 2 is:" + power);
 	}
 
 }
